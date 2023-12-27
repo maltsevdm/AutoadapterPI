@@ -9,11 +9,12 @@ from enum_classes import AdaptationType, GapItem, GapParam
 PATH_INIT_DATA = 'initial_data.json'
 PATH_RESULT = 'result.json'
 VNR_SRC = []
-
-
-def class_to_json(obj):
-    return obj.__dict__
-
+ADAPT_TYPES = [
+    AdaptationType.by_every_well,
+    AdaptationType.by_group,
+    AdaptationType.by_all_wells
+]
+GROUPS = []
 
 class AutoadapterPI:
     def __init__(
@@ -137,6 +138,10 @@ class AutoadapterPI:
             json.dump(self.wells, file, default=class_to_json,
                       ensure_ascii=False, indent=4)
 
+
+def class_to_json(obj):
+    return obj.__dict__
+    
 
 if __name__ == '__main__':
     aa = AutoadapterPI([])
