@@ -1,0 +1,22 @@
+[
+  {
+    "field": "some_field",
+    "pad": "1",
+    "well": "1001",
+    "gap_well": "W_1001",
+    "gap_src": "S_1001",
+    "pi": 39,
+    "q_liq": 1,
+    "item_type": "WELL",
+  },
+  {
+    "field": "some_field",
+    "pad": "1",
+    "well": "1002",
+    "gap_well": "W_1002",
+    "gap_src": "S_1002",
+    "pi": 0.1,
+    "q_liq": 350,
+    "item_type": "SOURCE"
+  }
+]
